@@ -57,19 +57,5 @@
     
     <?php include "/views/public/js.html" ?>
     
-    <script type="text/template" id="profile-tpl">
-        <div class="avatar img-circle">
-            <img src="{{tc_avatar}}">
-        </div>
-        <h4>{{tc_name}}</h4>
-    </script>
-    <script>
-
-        $(function(){
-            var fileInfo = JSON.parse($.cookie('fileinfo'));
-            var html = template("profile-tpl",fileInfo);
-            $("#userinfo").html(html);
-        })
-    </script>
 </body>
 </html>
